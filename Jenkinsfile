@@ -1,4 +1,4 @@
-@Library('my-shared-lib') _
+// @Library('my-shared-lib') _
 
 pipeline{
     agent any
@@ -6,11 +6,7 @@ pipeline{
         stage('Git Checkout'){
             steps{
                 
-                 
-                  gitCheckout{
-                    branch: "main"
-                    url: "https://github.com/bhabna1422/java_app.git"
-                  }
+                  echo 'Hello World'
                 
             }
         }
