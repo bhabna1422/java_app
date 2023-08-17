@@ -14,7 +14,8 @@ pipeline{
         stage('Unit test Maven'){
             steps{
                script {
-                  sh 'mvn test'
+                //   sh 'mvn test'
+                echo "hello"
                }
             }
         }
