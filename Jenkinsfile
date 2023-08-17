@@ -4,7 +4,11 @@ pipeline{
         stage('Git Checkout'){
             steps{
                 scripts{
-                  git 'https://github.com/bhabna1422/java_app.git'
+                 
+                  gitCheckout{
+                    branch: "master"
+                    url: "https://github.com/bhabna1422/java_app.git"
+                  }
                 }
             }
         }
