@@ -8,7 +8,7 @@ pipeline{
                 scripts{
                  
                   gitCheckout{
-                    branch: "master"
+                    branch: "main"
                     url: "https://github.com/bhabna1422/java_app.git"
                   }
                 }
