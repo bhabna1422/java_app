@@ -15,14 +15,14 @@ pipeline{
             }
         }
 
-        stage('Unit test Maven'){
-            steps{
-               script {
-                //   sh 'mvn test'
-                echo "hello"
-               }
-            }
-        }
+        // stage('Unit test Maven'){
+        //     steps{
+        //        script {
+        //         //   sh 'mvn test'
+        //         echo "hello"
+        //        }
+        //     }
+        // }
     }
 
 }
