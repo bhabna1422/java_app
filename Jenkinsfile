@@ -1,4 +1,4 @@
-@Library('my-shared-library@main') _
+// @Library('my-shared-library@main') _
 
 pipeline{
     agent any
@@ -6,23 +6,23 @@ pipeline{
         stage('Git Checkout'){
             steps{
                script {
-            //    git branch: 'main', url: 'https://github.com/bhabna1422/java_app.git'
-                gitCheckout{
-                    branch : "main"
-                    url: "https://github.com/bhabna1422/java_app.git"
-                }
+               git branch: 'main', url: 'https://github.com/bhabna1422/java_app.git'
+                // gitCheckout{
+                //     branch : "main"
+                //     url: "https://github.com/bhabna1422/java_app.git"
+                // }
                }
             }
         }
 
-        // stage('Unit test Maven'){
-        //     steps{
-        //        script {
-        //         //   sh 'mvn test'
-        //         echo "hello"
-        //        }
-        //     }
-        // }
+        stage('Unit test Maven'){
+            steps{
+               script {
+                //   sh 'mvn test'
+                echo "hello"
+               }
+            }
+        }
     }
 
 }
